@@ -17,18 +17,18 @@ namespace Jogo_de_Xadrez
             {
                 for (int j = 0; j < tab.Colunas; j++)
                 {
-                    if (tab.peca(i,j)==null)
+                    if (tab.peca(i, j) == null)
                     {
                         Console.Write("- ");
                     }
                     else
                     {
-                        Console.WriteLine($"{tab.peca(i, j)} ");
+                        Console.Write($"{tab.peca(i, j)} ");
                     }
                 }
                 Console.WriteLine();
             }
 
-    }
+        }
     }
 }

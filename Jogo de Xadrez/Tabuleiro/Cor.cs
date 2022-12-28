@@ -13,6 +13,6 @@ namespace tabuleiro
         Amarela,
         Azul,
         Vermelha,
-
+        Preta,
     }
 }
