@@ -13,10 +13,10 @@ namespace Jogo_de_Xadrez
         static void Main(string[] args)
         {
             PosicaoXadrez pos = new PosicaoXadrez('c', 7);
-
-            Console.WriteLine(pos);
-
-            Console.WriteLine(pos.toPosicao());
+            Tabuleiro tab = new Tabuleiro(8,8);
+            tab.colocaPeca(new Torre(tab, Cor.Branca), new Posicao(3, 5));
+            tab.colocaPeca(new Rei(tab, Cor.Preta), new Posicao(3, 6));
+            Tela.imprimirTabuleiro(tab);
         }
     }
 }
